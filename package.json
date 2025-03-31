@@ -6,10 +6,11 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint && prettier src -c"
   },
   "dependencies": {
     "next": "15.2.4",
+    "prettier": "^3.5.3",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "web-push": "^3.6.7"

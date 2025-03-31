@@ -18,15 +18,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html
-      lang="en"
-      data-lt-installed="true"
-    >
-      <body
-        className={`${workSans.variable} antialiased`}
-      >
-        {children}
-      </body>
+    <html lang="en" data-lt-installed="true">
+      <body className={`${workSans.variable} antialiased`}>{children}</body>
     </html>
   );
 }
