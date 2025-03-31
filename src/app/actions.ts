@@ -1,6 +1,6 @@
 "use server";
 
-import webpush from "web-push";
+import webpush, { PushSubscription as WebPushSubscription } from "web-push";
 
 webpush.setVapidDetails(
   process.env.NEXT_PUBLIC_EMAIL_ADDRESS!,
@@ -8,10 +8,10 @@ webpush.setVapidDetails(
   process.env.VAPID_PRIVATE_KEY!,
 );
 
-let subscription: PushSubscription | null = null;
+let subscription: WebPushSubscription | null = null;
 
 export async function subscribeUser(sub: PushSubscription) {
-  subscription = sub;
+  subscription = sub as unknown as WebPushSubscription;
   return { success: true };
 }
 
