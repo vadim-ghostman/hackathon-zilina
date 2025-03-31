@@ -66,39 +66,46 @@ function PushNotificationManager() {
   }
 
   if (!isSupported) {
-    return <p>Push notifications are not supported in this browser.</p>;
+    return <p className="text-center">Push notifications are not<br/>supported in this browser.</p>;
   }
 
   return (
-    <div className="flex flex-col gap-3 items-center">
-      <h3 className="font-bold text-2xl">Push Notifications</h3>
+    <div className="flex flex-col gap-2 items-center">
+      <h3 className="font-bold text-2xl text-gray-300">Push Notifications</h3>
       {subscription ? (
-        <>
-          <p>You are subscribed to push notifications.</p>
-          <button onClick={unsubscribeFromPush}>Unsubscribe</button>
+        <div className="flex flex-col gap-2">
           <input
+            className="border border-white rounded-md px-4 py-2"
             type="text"
             placeholder="Enter notification message"
             value={message}
             onChange={(e) => setMessage(e.target.value)}
           />
-          <button
-            className="rounded-md border border-white px-4 py-2"
-            onClick={sendTestNotification}
-          >
-            Send Test
-          </button>
-        </>
+          <div className="flex gap-2">
+            <button
+              className="rounded-md border w-full border-[aqua] text-[aqua] px-4 py-2"
+              onClick={sendTestNotification}
+            >
+              Send
+            </button>
+            <button
+              className="rounded-md border w-full border-orange-600 text-orange-600 px-4 py-2"
+              onClick={unsubscribeFromPush}
+            >
+              Unsubscribe
+            </button>
+          </div>
+        </div>
       ) : (
-        <>
-          <p>You are not subscribed to push notifications.</p>
+        <div className="flex flex-col gap-2">
+          <p className="text-center">You are not subscribed<br/>to push notifications.</p>
           <button
-            className="rounded-md border border-white px-4 py-2"
+            className="rounded-md border border-green-700 text-green-700 px-4 py-2"
             onClick={subscribeToPush}
           >
             Subscribe
           </button>
-        </>
+        </div>
       )}
     </div>
   );
@@ -120,14 +127,15 @@ function InstallPrompt() {
 
   return (
     <div className="flex flex-col gap-3 items-center">
-      <h3 className="font-bold text-2xl">Install App</h3>
-      <button className="rounded-md border border-white px-4 py-2">
+      <h3 className="font-bold text-2xl text-gray-300">Install App</h3>
+      <button className="rounded-md border border-amber-800 text-amber-800 px-4 py-2">
         Add to Home Screen
       </button>
       {isIOS && (
-        <p>
-          To install this app on your iOS device, tap the share button and then
-          Add to Home Screen
+        <p className="text-sm text-center text-gray-500">
+          To install this app on your iOS device,<br/>
+          tap the share button and then<br/>
+          {"\"Add to Home Screen\""}
         </p>
       )}
     </div>
@@ -136,11 +144,13 @@ function InstallPrompt() {
 
 export default function Home() {
   return (
-    <div className="flex flex-col gap-10 items-center justify-center min-h-screen">
-      Welcome to the page of Kysuce mikroregion
-      <div className="flex flex-col gap-10 items-center">
-        <PushNotificationManager />
-        <InstallPrompt />
+    <div className="min-h-screen flex items-center justify-center">
+      <div className="w-[400px] flex flex-col gap-10 items-center justify-center">
+        <h1 className="font-bold text-3xl">Moje <span className="text-[goldenrod]">Kysuce</span></h1>
+        <div className="flex flex-col gap-10 items-center">
+          <PushNotificationManager />
+          <InstallPrompt />
+        </div>
       </div>
     </div>
   );
