@@ -33,7 +33,7 @@ const WhoGoesScreen = ({ choosen, setChoosen }: { choosen: number, setChoosen: (
   );
 }
 
-const ChooseDateScreen = ({ date, setDate }: { date: string, setDate: (n: string) => void }) => {
+const ChooseDateScreen = () => {//({ date, setDate }: { date: string, setDate: (n: string) => void }) => {
   return (
     <div>
       <h1 className='font-semibold text-[30px] mt-7'>Dátumy cestovania</h1>
@@ -88,7 +88,7 @@ const Planner = () => {
         >
           <Back className='icon' width={12} height={24} />
         </div>
-        {screenIdx == 1 && <ChooseDateScreen date={""} setDate={() => {}} />}
+        {screenIdx == 1 && <ChooseDateScreen/>}
         {screenIdx == 0 && <WhoGoesScreen choosen={choosen} setChoosen={setChoosen} />}
       </div>
 
