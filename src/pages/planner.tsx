@@ -6,7 +6,6 @@ import Clock from '../../public/clock.svg';
 import Timer from '../../public/timer.svg';
 import Dateend from '../../public/datestart.svg';
 import Right_Arrow from '../../public/right-arrow.svg';
-import Filter from '../../public/filter.svg';
 import Cancel from '../../public/cancel.svg';
 import Star from '../../public/star.svg';
 import Rane from '../../public/rane.svg';

@@ -1,7 +1,6 @@
 "use client";
 
 import { useRouter } from "next/navigation";
-import Footer from "./components/footer";
 import Header from "./components/header";
 import { useState } from "react";
 import Sidebar from "./components/sidebar";
