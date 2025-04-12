@@ -1,5 +1,6 @@
 "use client";
 
+import { useRouter } from "next/navigation";
 import Footer from "./components/footer";
 // import { useState, useEffect } from "react";
 // import { subscribeUser, unsubscribeUser, sendNotification } from "./actions";
@@ -145,8 +146,12 @@ import Header from "./components/header";
 // }
 
 const Button = ({ text }: { text: string }) => {
+  const router = useRouter();
   return (
-    <div className="flex cursor-pointer flex-col items-center w-full text-white rounded-[10px] py-[10px] bg-aquablue text-[18px] font-bold shadow-[0_2px_4px_rgba(0,0,0,0.25)]">
+    <div
+      onClick={() => {router.push('/planner');}}
+      className="flex cursor-pointer flex-col items-center w-full text-white rounded-[10px] py-[10px] bg-aquablue text-[18px] font-bold shadow-[0_2px_4px_rgba(0,0,0,0.25)]"
+    >
       {text}
     </div>
   );
