@@ -1,0 +1,41 @@
+<svg width="390" height="96" viewBox="0 0 390 96" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="29" y="50" width="8" height="33" fill="black"/>
+<rect x="41" y="59" width="8" height="24" fill="black"/>
+<rect x="53" y="35" width="8" height="48" fill="black"/>
+<rect x="65" y="69" width="8" height="14" fill="black"/>
+<rect x="77" y="43" width="8" height="40" fill="black"/>
+<rect x="89" y="35" width="8" height="48" fill="black"/>
+<rect x="101" y="29" width="8" height="54" fill="black"/>
+<rect x="113" y="43" width="8" height="40" fill="black"/>
+<rect x="125" width="8" height="83" fill="black"/>
+<rect x="137" y="50" width="8" height="33" fill="black"/>
+<rect x="149" y="25" width="8" height="58" fill="black"/>
+<rect x="161" y="35" width="8" height="48" fill="black"/>
+<rect x="173" y="65" width="8" height="18" fill="black"/>
+<rect x="185" y="43" width="8" height="40" fill="black"/>
+<rect x="197" y="47" width="8" height="36" fill="black"/>
+<rect x="209" y="69" width="8" height="14" fill="black"/>
+<rect x="221" y="29" width="8" height="54" fill="black"/>
+<rect x="233" y="38" width="8" height="45" fill="black"/>
+<rect x="245" y="50" width="8" height="33" fill="black"/>
+<rect x="257" y="69" width="8" height="14" fill="black"/>
+<rect x="269" y="76" width="8" height="7" fill="black"/>
+<rect x="281" y="43" width="8" height="40" fill="black"/>
+<rect x="293" y="59" width="8" height="24" fill="black"/>
+<rect x="305" y="65" width="8" height="18" fill="black"/>
+<rect x="317" y="69" width="8" height="14" fill="black"/>
+<rect x="329" y="76" width="8" height="7" fill="black"/>
+<rect x="341" y="72" width="8" height="11" fill="black"/>
+<rect x="353" y="74" width="8" height="9" fill="black"/>
+<rect x="29" y="81" width="332" height="2" fill="black"/>
+<rect x="350.5" y="68.5" width="27" height="27" rx="13.5" fill="#EBEBEB"/>
+<rect x="350.5" y="68.5" width="27" height="27" rx="13.5" stroke="black"/>
+<path d="M361.167 76L361.167 88C361.167 88.2733 360.94 88.5 360.667 88.5C360.394 88.5 360.167 88.2733 360.167 88L360.167 76C360.167 75.7267 360.394 75.5 360.667 75.5C360.94 75.5 361.167 75.7267 361.167 76Z" fill="black"/>
+<path d="M364.5 76L364.5 88C364.5 88.2733 364.273 88.5 364 88.5C363.727 88.5 363.5 88.2733 363.5 88L363.5 76C363.5 75.7267 363.727 75.5 364 75.5C364.273 75.5 364.5 75.7267 364.5 76Z" fill="black"/>
+<path d="M367.833 76L367.833 88C367.833 88.2733 367.606 88.5 367.333 88.5C367.06 88.5 366.833 88.2733 366.833 88L366.833 76C366.833 75.7267 367.06 75.5 367.333 75.5C367.606 75.5 367.833 75.7267 367.833 76Z" fill="black"/>
+<rect x="15.5" y="68.5" width="27" height="27" rx="13.5" fill="#EBEBEB"/>
+<rect x="15.5" y="68.5" width="27" height="27" rx="13.5" stroke="black"/>
+<path d="M26.167 76L26.167 88C26.167 88.2733 25.9403 88.5 25.667 88.5C25.3937 88.5 25.167 88.2733 25.167 88L25.167 76C25.167 75.7267 25.3937 75.5 25.667 75.5C25.9403 75.5 26.167 75.7267 26.167 76Z" fill="black"/>
+<path d="M29.5 76L29.5 88C29.5 88.2733 29.2733 88.5 29 88.5C28.7267 88.5 28.5 88.2733 28.5 88L28.5 76C28.5 75.7267 28.7267 75.5 29 75.5C29.2733 75.5 29.5 75.7267 29.5 76Z" fill="black"/>
+<path d="M32.833 76L32.833 88C32.833 88.2733 32.6063 88.5 32.333 88.5C32.0597 88.5 31.833 88.2733 31.833 88L31.833 76C31.833 75.7267 32.0597 75.5 32.333 75.5C32.6063 75.5 32.833 75.7267 32.833 76Z" fill="black"/>
+</svg>
