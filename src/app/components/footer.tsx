@@ -19,11 +19,11 @@ const Button = ({ text, choosen, component: Component }: { text: string, choosen
 const Footer = () => {
   return (
     <footer className='fixed bottom-0 w-full h-[60px] px-[10px] flex items-center justify-between bg-white'>
-      <Button component={Home} text="home" choosen={true} />
-      <Button component={Map} text="map" />
-      <Button component={Events} text="events" />
-      <Button component={Samosprava} text="samosprava" />
-      <Button component={Profile} text="profile" />
+      <Button component={Home} text="Domov" choosen={true} />
+      <Button component={Map} text="Mapa" />
+      <Button component={Events} text="Podujatia" />
+      <Button component={Samosprava} text="Samosprava" />
+      <Button component={Profile} text="Profil" />
     </footer>
   );
 }

@@ -255,8 +255,9 @@ const HotelsRecommendation = () => {
         <UpCard path="/h2.jpg" text="Labengki Sombori" description='Islands in Sulawesi' price={250} rating='4.8'/>
         <UpCard path="/h3.jpg" text="Sailing Komodo" description='Labuan Bajo' price={200} rating='4.8'/>
       </div>
-      <div className='flex text-[18px] font-semibold px-5'>
+      <div className='flex text-[18px] font-semibold px-5 justify-between'>
         <p>Odporucane hotely</p>
+        <p className='text-aquablue'>Vsetky</p>
       </div>
       <div className='flex flex-col px-5 gap-4'>
         <HotelCard path="/h4.jpg" text="Swiss-Belhotel Rainforest Kuta" description='Jl. Sunset Road No. 101, Skalite' price={150} rating='4.9'/>
@@ -359,18 +360,14 @@ const Planner = () => {
   return (
     <div className='flex flex-col min-h-screen pt-5 pb-10 justify-between gap-5'>
       <div>
-        <div className='flex justify-between px-5'>
+        <div className='flex justify-between items-center px-5'>
           <div
             onClick={() => {router.push('/');}}
             className='flex size-10 items-center justify-center rounded-full shadow-[0_2px_4px_rgba(0,0,0,0.25)] bg-white border border-[#d9d9d9]'
           >
             <Back className='icon' width={12} height={24} />
           </div>
-          {screenIdx == 4 && <div
-            className='flex size-10 items-center justify-center rounded-full shadow-[0_2px_4px_rgba(0,0,0,0.25)] bg-white border border-[#d9d9d9]'
-          >
-            <Filter className='icon' width={24} height={24} />
-          </div>}
+          {screenIdx == 4 && <p className='font-bold text-base text-aquablue'>Vsetky</p>}
         </div>
         {screenIdx == 0 && <WhoGoesScreen choosen={choosen} setChoosen={setChoosen} />}
         {screenIdx == 1 && <ChooseDateScreen/>}
