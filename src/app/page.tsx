@@ -195,7 +195,7 @@ export default function Home() {
         </div>
         <div className="flex flex-col px-5 gap-5">
           <Button text="Chcete naplánovať dovolenku?"/>
-          <p className="font-bold text-[24px] text-black">Aktuality <span className="text-aquablue">Čierneho</span></p>
+          <p className="font-bold text-[24px] text-black">Aktuality</p> {/* <span className="text-aquablue">Čierneho</span> */}
           <div className="flex flex-col gap-5">
             <News />
             <News />
